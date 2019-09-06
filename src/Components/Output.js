@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Output extends Component {
   render() {
-    return <div className="output"></div>;
+    return <div className="output">TEST OUTPUT</div>;
   }
 }
 

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Range from "./Components/Range";
+import Output from "./Components/Output";
 
 class App extends Component {
   constructor(props) {
@@ -25,6 +26,9 @@ class App extends Component {
             <label>Weight</label>
           </div>
         </form>
+        <br />
+        <br />
+        <Output />
       </div>
     );
   }
