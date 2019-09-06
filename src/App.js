@@ -31,7 +31,7 @@ class App extends Component {
       10000
     ).toFixed(2);
     this.setState({ bmi: bmi, bmiClass: this.getBmiClass(bmi) }, function() {
-      console.log(this.state);
+      // console.log(this.state);
     });
   }
 
@@ -44,10 +44,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>BMI Calculator</h1>
+        <h1>Your Life Insurance Quote</h1>
         <form>
           <div>
-            <label>Your Date of Birth</label>
+            <label>Date of Birth? </label>
             <DatePicker />
             <br />
             <br />
@@ -56,14 +56,14 @@ class App extends Component {
             <label>Are you a smoker?</label>
             <Smoker />
             <br />
-            <label>Your Height?</label>
+            <label>Your Height? (cm)</label>
             <Range
               value={this.state.height}
               onChange={this.heightChange.bind(this)}
             />
           </div>
           <div>
-            <label>Your Weight?</label>
+            <label>Your Weight? (kilos)</label>
             <Range
               value={this.state.weight}
               onChange={this.weightChange.bind(this)}
