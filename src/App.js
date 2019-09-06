@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Range from "./Components/Range";
 
 class App extends Component {
   constructor(props) {
@@ -18,6 +19,7 @@ class App extends Component {
         <form>
           <div>
             <label>Height</label>
+            <Range />
           </div>
           <div>
             <label>Weight</label>
