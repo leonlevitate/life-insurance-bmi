@@ -2,11 +2,14 @@ import React, { Component } from "react";
 import "./App.css";
 import Range from "./Components/Range";
 import Output from "./Components/Output";
+import Smoker from "./Components/Smoker";
+import DatePicker from "./Components/DatePicker";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      smoker: "No",
       height: 170,
       weight: 65,
       bmi: 22.49,
@@ -44,14 +47,23 @@ class App extends Component {
         <h1>BMI Calculator</h1>
         <form>
           <div>
-            <label>Height</label>
+            <label>Your Date of Birth</label>
+            <DatePicker />
+            <br />
+            <br />
+          </div>
+          <div>
+            <label>Are you a smoker?</label>
+            <Smoker />
+            <br />
+            <label>Your Height?</label>
             <Range
               value={this.state.height}
               onChange={this.heightChange.bind(this)}
             />
           </div>
           <div>
-            <label>Weight</label>
+            <label>Your Weight?</label>
             <Range
               value={this.state.weight}
               onChange={this.weightChange.bind(this)}
@@ -60,7 +72,7 @@ class App extends Component {
         </form>
         <br />
         <br />
-        <Output />
+        <Output data={this.state} />
       </div>
     );
   }

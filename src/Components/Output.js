@@ -2,7 +2,18 @@ import React, { Component } from "react";
 
 class Output extends Component {
   render() {
-    return <div className="output">TEST OUTPUT</div>;
+    let height = this.props.data.height;
+    let weight = this.props.data.weight;
+    let bmi = this.props.data.bmi;
+    let bmiClass = this.props.data.bmiClass;
+    return (
+      <div className="output">
+        <h3>{height}</h3>
+        <h3>{weight}</h3>
+        <h3>{bmi}</h3>
+        <h3>{bmiClass}</h3>
+      </div>
+    );
   }
 }
 
