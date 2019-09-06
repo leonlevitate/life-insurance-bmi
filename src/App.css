@@ -1,4 +1,20 @@
 .App {
+  width: 500px;
+  margin: 10px auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border: #ccc solid 1px;
+  zoom: 150%;
+}
+
+.output h3 {
+  border: #ccc 1px solid;
+  padding: 20px;
+  color: rgb(46, 47, 47);
+}
+
+h1 {
+  color: rgb(46, 47, 47);
 }
 /* Taken from https://www.cssportal.com/style-input-range/ */
 input[type="range"] {
