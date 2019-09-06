@@ -19,6 +19,12 @@ class App extends Component {
       console.log(this.state);
     });
   }
+
+  weightChange(weight) {
+    this.setState({ weight: weight }, function() {
+      console.log(this.state);
+    });
+  }
   render() {
     return (
       <div className="App">
@@ -33,6 +39,10 @@ class App extends Component {
           </div>
           <div>
             <label>Weight</label>
+            <Range
+              value={this.state.weight}
+              onChange={this.weightChange.bind(this)}
+            />
           </div>
         </form>
         <br />
