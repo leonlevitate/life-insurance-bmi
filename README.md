@@ -28,4 +28,8 @@ For the CSS, I formed my own design, but also included a template from www.csspo
 
 ![alt text](screenshot/life-insurance-app.png?raw=true"screenshot")
 
-##
+## Reflection
+
+As I'm relatively new to learning React, unfortunately I did not manage to fully implement all of the requirements. The majority of my time was focused on building a robust BMI calculator, and I succeeded with this. My aim was to develop a coefficient matrix to generate a quote based on other conditional logic. I would have also designed some more tests using Jest. With more time and practice, I feel confident that I would be able to build the application to meet the complete user spec.
+
+I enjoy working with React, and plan on continuing my learning by building projects with React Router, Redux, GraphQL/Relay, and Jest.
