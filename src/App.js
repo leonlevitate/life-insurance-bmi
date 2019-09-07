@@ -48,7 +48,11 @@ class App extends Component {
         <form>
           <div>
             <label>Date of Birth? </label>
-            <DatePicker />
+            <DatePicker
+              selected={this.state.date}
+              onSelect={this.handleSelect}
+              onChange={this.handleChange}
+            />
             <br />
             <br />
           </div>
