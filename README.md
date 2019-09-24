@@ -16,7 +16,7 @@ Launches the test runner in the interactive watch mode.<br>
 
 ## Approach
 
-To separate the building blocks for the user interface, I produced three main components: **Range** (calcualates the BMI range), **Output** (displays output content), and **Smoker**.
+To separate the building blocks for the user interface, I produced three main components: **Range** (calculates the BMI range), **Output** (displays output content), and **Smoker**.
 
 I also installed a calendar _DatePicker_ npm package, and wrapped it in a component to capture the date of birth.
 
